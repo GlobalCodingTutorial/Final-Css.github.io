@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - RW Royal Cleaning Service</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f7f9fb;
+      }
+      header,
+      footer {
+        background: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .form-row {
+        margin-bottom: 15px;
+      }
+      .form-row input,
+      .form-row textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+      .btn {
+        background: #d4af37;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      header {
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav a {
+        margin-left: 18px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="mailto:here@yahoo.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" />
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Your Email" />
+        </div>
+        <div class="form-row">
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+    </div>
+    <footer>© <span id="year3"></span> RW Royal Cleaning Service</footer>
+    <script>
+      document.getElementById("year3").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

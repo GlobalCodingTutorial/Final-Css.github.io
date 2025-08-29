@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RW Royal Cleaning Service — Clone</title>
+<meta name="description" content="Because Cleanliness is Luxury. RW Royal Cleaning Service — clone built for learning and customization.">
+<style>
+:root{--accent:#0b74de;--gold:#d4af37;--bg:#f7f9fb;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#222}
+header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);position:sticky;top:0;z-index:50}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:48px;width:48px;border-radius:8px;object-fit:cover}
+nav a{margin-left:18px;text-decoration:none;color:#333;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:48px 0}
+.hero-left h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
+.hero-left p{margin:0 0 18px;color:#444}
+.cta{display:inline-block;background:var(--gold);color:#111;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
+.card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(11,116,222,0.06)}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px}
+.service{padding:18px;border-radius:10px}
+.why{display:flex;gap:18px;margin:36px 0}
+.why .list{flex:1}
+.img-wrap{border-radius:12px;overflow:hidden}
+.img-wrap img{width:100%;height:100%;display:block}
+footer{padding:28px 0;text-align:center;color:#666;font-size:14px}
+@media (max-width:880px){
+.hero{grid-template-columns:1fr;}
+nav a{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="brand">
+<img src="https://marketplace.canva.com/EAF4y3V4yF0/1/0/800w/canva-blue-and-white-cleaning-services-logo-4IfPov-omis.jpg" alt="logo">
+<div>
+<div style="font-weight:800">RW Royal Cleaning Service</div>
+<div style="font-size:12px;color:#777">Because Cleanliness is Luxury.</div>
+</div>
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<div class="hero-left">
+<h1>Because Cleanliness is Luxury.</h1>
+<p>We provide top-quality cleaning with a touch of royalty. Let us handle the mess, so you can relax in a spotless space.</p>
+<a class="cta" href="contact.html">Request a Quote</a>
+
+
+<div class="card" style="margin-top:18px">
+<strong>Our Services</strong>
+<div class="services">
+<div class="service">Residential Cleaning</div>
+<div class="service">Deep Cleaning</div>
+<div class="service">Office and Commercial</div>
+<div class="service">Move-In / Move-Out</div>
+</div>
+</div>
+</div>
+
+
+<div class="card img-wrap">
+</html>
